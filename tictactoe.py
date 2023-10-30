@@ -21,5 +21,9 @@ reset_button.pack(side="top")
 frame = Frame(window)
 frame.pack()
 
+for row in range(3):
+    for column in range(3):
+        board[row][column] = Button(frame, text="", font=("consolas"), width=12, height=6)
+        board[row][column].grid(row = row, column = column)
 window.mainloop()
 
